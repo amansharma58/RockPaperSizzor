@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rock Paper Sizzor</title> 
+  <link rel="stylesheet" href="rockpapersizzor.css">
+</head>
+<body>
+  <h1>Rock Paper Sizzor</h1>
+  <button class="choice-button" onclick="
+  let computerChoice = genrateComputerChoice();
+  let result = getresult('Rock',computerChoice);
+  showResult('Rock',computerChoice,result);
+  "><img src="image/Rock.jpg" alt="Rock Image" class="choice-image"></button>
+  <button class="choice-button" onclick="computerChoice = genrateComputerChoice();
+   result = getresult('Paper',computerChoice);
+   showResult('Paper',computerChoice,result);
+  "><img src="image/Paper.jpg" alt="Paper Image" class="choice-image"></button>
+  <button class="choice-button" onclick="computerChoice = genrateComputerChoice();
+   result = getresult('Sizzor',computerChoice);
+   showResult('Sizzor',computerChoice,result);
+  "><img src="image/Sizzor.jpg" alt="Sizzor Image" class="choice-image"></button>
+    <h3 id="user-move"></h3>
+    <h3 id="computer-move"></h3>
+    <h3 id="result"></h3>
+    <h3 id="score"></h3>
+  <button onclick="localStorage.clear();
+  resetscore();">Reset
+ <script src="rockpapersizzor.js"></script>
+</body>
+</html>
